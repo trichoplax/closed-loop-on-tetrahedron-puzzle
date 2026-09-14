@@ -122,5 +122,100 @@ fn main() -> std::io::Result<()> {
 </svg>
 "##))?;
 
+    let icosahedron_triangle_width = 150_f64;
+    let icosahedron_triangle_height = icosahedron_triangle_width * SQRT_3 / 2_f64;
+    let icosahedron_net_image_width_in_triangles = 5.5_f64;
+    let icosahedron_net_image_height_in_triangles = 3_f64;
+    let icosahedron_net_image_width = icosahedron_triangle_width * icosahedron_net_image_width_in_triangles;
+    let icosahedron_net_image_height = icosahedron_triangle_height * icosahedron_net_image_height_in_triangles;
+    let icosahedron_triangle_stroke_width = 7.5_f64;
+    let icosahedron_triangle_narrowed_stroke_width = icosahedron_triangle_stroke_width * 0.9;
+    let icosahedron_inner_triangle_start_x = SQRT_3 * icosahedron_triangle_stroke_width / 2_f64;
+    let icosahedron_inner_triangle_start_y = icosahedron_triangle_height - icosahedron_triangle_stroke_width / 2_f64;
+    let icosahedron_inner_triangle_width = icosahedron_triangle_width - SQRT_3 * icosahedron_triangle_stroke_width;
+    let icosahedron_inner_triangle_half_width = icosahedron_inner_triangle_width / 2_f64;
+    let icosahedron_inner_triangle_height = icosahedron_inner_triangle_width * SQRT_3 / 2_f64;
+    let icosahedron_triangle_half_width = icosahedron_triangle_width / 2_f64;
+    let icosahedron_triangle_three_halves_width = icosahedron_triangle_width * 3_f64 / 2_f64;
+    let icosahedron_triangle_five_halves_width = icosahedron_triangle_width * 5_f64 / 2_f64;
+    let icosahedron_triangle_seven_halves_width = icosahedron_triangle_width * 7_f64 / 2_f64;
+    let icosahedron_triangle_nine_halves_width = icosahedron_triangle_width * 9_f64 / 2_f64;
+    let icosahedron_triangle_half_height = icosahedron_triangle_height / 2f64;
+    let icosahedron_triangle_double_width = icosahedron_triangle_width * 2_f64;
+    let icosahedron_triangle_triple_width = icosahedron_triangle_width * 3_f64;
+    let icosahedron_triangle_quadruple_width = icosahedron_triangle_width * 4_f64;
+    let icosahedron_triangle_double_height = icosahedron_triangle_height * 2_f64;
+    let icosahedron_triangle_triple_height = icosahedron_triangle_height * 3_f64;
+    fs::write("icosahedron-net.svg", format!(r##"<svg width="{icosahedron_net_image_width}" height="{icosahedron_net_image_height}" viewBox="0 0 {icosahedron_net_image_width} {icosahedron_net_image_height}" xmlns="http://www.w3.org/2000/svg" version="2">
+    <defs>
+        <g id="triangle-tile">
+            <path d="M {icosahedron_inner_triangle_start_x},{icosahedron_inner_triangle_start_y} h {icosahedron_inner_triangle_width} l -{icosahedron_inner_triangle_half_width},-{icosahedron_inner_triangle_height} z" fill="none" stroke="grey" stroke-width="{icosahedron_triangle_narrowed_stroke_width}" />
+        </g>
+        <g id="rotated-triangle-tile">
+            <use href="#triangle-tile" transform="rotate(180,{icosahedron_triangle_half_width},{icosahedron_triangle_half_height})" />
+        </g>
+    </defs>
+    <use href="#triangle-tile" x="{icosahedron_triangle_half_width}" y="0" />
+    <use href="#triangle-tile" x="{icosahedron_triangle_three_halves_width}" y="0" />
+    <use href="#triangle-tile" x="{icosahedron_triangle_five_halves_width}" y="0" />
+    <use href="#triangle-tile" x="{icosahedron_triangle_seven_halves_width}" y="0" />
+    <use href="#triangle-tile" x="{icosahedron_triangle_nine_halves_width}" y="0" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_half_width}" y="{icosahedron_triangle_height}" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_three_halves_width}" y="{icosahedron_triangle_height}" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_five_halves_width}" y="{icosahedron_triangle_height}" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_seven_halves_width}" y="{icosahedron_triangle_height}" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_nine_halves_width}" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile" x="0" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile" x="{icosahedron_triangle_width}" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile" x="{icosahedron_triangle_double_width}" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile" x="{icosahedron_triangle_triple_width}" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile" x="{icosahedron_triangle_quadruple_width}" y="{icosahedron_triangle_height}" />
+    <use href="#rotated-triangle-tile" x="0" y="{icosahedron_triangle_double_height}" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_width}" y="{icosahedron_triangle_double_height}" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_double_width}" y="{icosahedron_triangle_double_height}" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_triple_width}" y="{icosahedron_triangle_double_height}" />
+    <use href="#rotated-triangle-tile" x="{icosahedron_triangle_quadruple_width}" y="{icosahedron_triangle_double_height}" />
+</svg>
+"##))?;
+
+    let icosahedron_tiles_image_width_in_triangles = 5_f64;
+    let icosahedron_tiles_image_height_in_triangles = 4_f64;
+    let icosahedron_tiles_image_width = icosahedron_triangle_width * icosahedron_tiles_image_width_in_triangles;
+    let icosahedron_tiles_image_height = icosahedron_triangle_height * icosahedron_tiles_image_height_in_triangles;
+    let icosahedron_triangle_quarter_width = icosahedron_triangle_width / 4_f64;
+    let icosahedron_wide_arc_width = 20;
+    let icosahedron_narrow_arc_width = 10;
+    fs::write("icosahedron-tiles.svg", format!(r##"<svg width="{icosahedron_tiles_image_width}" height="{icosahedron_tiles_image_height}" viewBox="0 0 {icosahedron_tiles_image_width} {icosahedron_tiles_image_height}" xmlns="http://www.w3.org/2000/svg" version="2">
+    <defs>
+        <path id="arc" d="M {icosahedron_triangle_quarter_width},{icosahedron_triangle_half_height} a {icosahedron_triangle_half_width} {icosahedron_triangle_half_width} 60 0 0 {icosahedron_triangle_half_width},0" fill="none" />
+        <g id="triangle-tile-with-arc">
+            <path d="M {icosahedron_inner_triangle_start_x},{icosahedron_inner_triangle_start_y} h {icosahedron_inner_triangle_width} l -{icosahedron_inner_triangle_half_width},-{icosahedron_inner_triangle_height} z" fill="none" stroke="grey" stroke-width="{icosahedron_triangle_stroke_width}" />
+            <use href="#arc" stroke="#44e" stroke-width="{icosahedron_wide_arc_width}" />
+            <use href="#arc" stroke="#4c3" stroke-width="{icosahedron_narrow_arc_width}" />
+        </g>
+    </defs>
+    <use href="#triangle-tile-with-arc" x="0" y="0" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_width}" y="0" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_double_width}" y="0" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_triple_width}" y="0" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_quadruple_width}" y="0" />
+    <use href="#triangle-tile-with-arc" x="0" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_width}" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_double_width}" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_triple_width}" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_quadruple_width}" y="{icosahedron_triangle_height}" />
+    <use href="#triangle-tile-with-arc" x="0" y="{icosahedron_triangle_double_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_width}" y="{icosahedron_triangle_double_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_double_width}" y="{icosahedron_triangle_double_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_triple_width}" y="{icosahedron_triangle_double_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_quadruple_width}" y="{icosahedron_triangle_double_height}" />
+    <use href="#triangle-tile-with-arc" x="0" y="{icosahedron_triangle_triple_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_width}" y="{icosahedron_triangle_triple_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_double_width}" y="{icosahedron_triangle_triple_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_triple_width}" y="{icosahedron_triangle_triple_height}" />
+    <use href="#triangle-tile-with-arc" x="{icosahedron_triangle_quadruple_width}" y="{icosahedron_triangle_triple_height}" />
+</svg>
+"##))?;
+
     Ok(())
 }

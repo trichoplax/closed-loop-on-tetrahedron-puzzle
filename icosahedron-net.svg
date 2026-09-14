@@ -1,0 +1,30 @@
+<svg width="825" height="389.7114317029974" viewBox="0 0 825 389.7114317029974" xmlns="http://www.w3.org/2000/svg" version="2">
+    <defs>
+        <g id="triangle-tile">
+            <path d="M 6.495190528383289,126.1538105676658 h 137.00961894323342 l -68.50480947161671,-118.65381056766579 z" fill="none" stroke="grey" stroke-width="6.75" />
+        </g>
+        <g id="rotated-triangle-tile">
+            <use href="#triangle-tile" transform="rotate(180,75,64.9519052838329)" />
+        </g>
+    </defs>
+    <use href="#triangle-tile" x="75" y="0" />
+    <use href="#triangle-tile" x="225" y="0" />
+    <use href="#triangle-tile" x="375" y="0" />
+    <use href="#triangle-tile" x="525" y="0" />
+    <use href="#triangle-tile" x="675" y="0" />
+    <use href="#rotated-triangle-tile" x="75" y="129.9038105676658" />
+    <use href="#rotated-triangle-tile" x="225" y="129.9038105676658" />
+    <use href="#rotated-triangle-tile" x="375" y="129.9038105676658" />
+    <use href="#rotated-triangle-tile" x="525" y="129.9038105676658" />
+    <use href="#rotated-triangle-tile" x="675" y="129.9038105676658" />
+    <use href="#triangle-tile" x="0" y="129.9038105676658" />
+    <use href="#triangle-tile" x="150" y="129.9038105676658" />
+    <use href="#triangle-tile" x="300" y="129.9038105676658" />
+    <use href="#triangle-tile" x="450" y="129.9038105676658" />
+    <use href="#triangle-tile" x="600" y="129.9038105676658" />
+    <use href="#rotated-triangle-tile" x="0" y="259.8076211353316" />
+    <use href="#rotated-triangle-tile" x="150" y="259.8076211353316" />
+    <use href="#rotated-triangle-tile" x="300" y="259.8076211353316" />
+    <use href="#rotated-triangle-tile" x="450" y="259.8076211353316" />
+    <use href="#rotated-triangle-tile" x="600" y="259.8076211353316" />
+</svg>

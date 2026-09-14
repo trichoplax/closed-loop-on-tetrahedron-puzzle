@@ -1,0 +1,30 @@
+<svg width="750" height="519.6152422706632" viewBox="0 0 750 519.6152422706632" xmlns="http://www.w3.org/2000/svg" version="2">
+    <defs>
+        <path id="arc" d="M 37.5,64.9519052838329 a 75 75 60 0 0 75,0" fill="none" />
+        <g id="triangle-tile-with-arc">
+            <path d="M 6.495190528383289,126.1538105676658 h 137.00961894323342 l -68.50480947161671,-118.65381056766579 z" fill="none" stroke="grey" stroke-width="7.5" />
+            <use href="#arc" stroke="#44e" stroke-width="20" />
+            <use href="#arc" stroke="#4c3" stroke-width="10" />
+        </g>
+    </defs>
+    <use href="#triangle-tile-with-arc" x="0" y="0" />
+    <use href="#triangle-tile-with-arc" x="150" y="0" />
+    <use href="#triangle-tile-with-arc" x="300" y="0" />
+    <use href="#triangle-tile-with-arc" x="450" y="0" />
+    <use href="#triangle-tile-with-arc" x="600" y="0" />
+    <use href="#triangle-tile-with-arc" x="0" y="129.9038105676658" />
+    <use href="#triangle-tile-with-arc" x="150" y="129.9038105676658" />
+    <use href="#triangle-tile-with-arc" x="300" y="129.9038105676658" />
+    <use href="#triangle-tile-with-arc" x="450" y="129.9038105676658" />
+    <use href="#triangle-tile-with-arc" x="600" y="129.9038105676658" />
+    <use href="#triangle-tile-with-arc" x="0" y="259.8076211353316" />
+    <use href="#triangle-tile-with-arc" x="150" y="259.8076211353316" />
+    <use href="#triangle-tile-with-arc" x="300" y="259.8076211353316" />
+    <use href="#triangle-tile-with-arc" x="450" y="259.8076211353316" />
+    <use href="#triangle-tile-with-arc" x="600" y="259.8076211353316" />
+    <use href="#triangle-tile-with-arc" x="0" y="389.7114317029974" />
+    <use href="#triangle-tile-with-arc" x="150" y="389.7114317029974" />
+    <use href="#triangle-tile-with-arc" x="300" y="389.7114317029974" />
+    <use href="#triangle-tile-with-arc" x="450" y="389.7114317029974" />
+    <use href="#triangle-tile-with-arc" x="600" y="389.7114317029974" />
+</svg>
