@@ -61,7 +61,7 @@ fn main() -> std::io::Result<()> {
     let octahedron_net_image_height_in_triangles = 3_f64;
     let octahedron_net_image_width = octahedron_triangle_width * octahedron_net_image_width_in_triangles;
     let octahedron_net_image_height = octahedron_triangle_height * octahedron_net_image_height_in_triangles;
-    let octahedron_triangle_stroke_width = 15_f64;
+    let octahedron_triangle_stroke_width = 7.5_f64;
     let octahedron_triangle_narrowed_stroke_width = octahedron_triangle_stroke_width * 0.9;
     let octahedron_inner_triangle_start_x = SQRT_3 * octahedron_triangle_stroke_width / 2_f64;
     let octahedron_inner_triangle_start_y = octahedron_triangle_height - octahedron_triangle_stroke_width / 2_f64;

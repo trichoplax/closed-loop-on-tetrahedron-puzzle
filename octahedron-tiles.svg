@@ -2,7 +2,7 @@
     <defs>
         <path id="arc" d="M 37.5,64.9519052838329 a 75 75 60 0 0 75,0" fill="none" />
         <g id="triangle-tile-with-arc">
-            <path d="M 12.990381056766578,122.4038105676658 h 124.01923788646684 l -62.00961894323342,-107.40381056766579 z" fill="none" stroke="grey" stroke-width="15" />
+            <path d="M 6.495190528383289,126.1538105676658 h 137.00961894323342 l -68.50480947161671,-118.65381056766579 z" fill="none" stroke="grey" stroke-width="7.5" />
             <use href="#arc" stroke="#e84" stroke-width="20" />
             <use href="#arc" stroke="#d43" stroke-width="10" />
         </g>

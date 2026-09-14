@@ -1,7 +1,7 @@
 <svg width="525" height="389.7114317029974" viewBox="0 0 525 389.7114317029974" xmlns="http://www.w3.org/2000/svg" version="2">
     <defs>
         <g id="triangle-tile">
-            <path d="M 12.990381056766578,122.4038105676658 h 124.01923788646684 l -62.00961894323342,-107.40381056766579 z" fill="none" stroke="grey" stroke-width="13.5" />
+            <path d="M 6.495190528383289,126.1538105676658 h 137.00961894323342 l -68.50480947161671,-118.65381056766579 z" fill="none" stroke="grey" stroke-width="6.75" />
         </g>
         <g id="rotated-triangle-tile">
             <use href="#triangle-tile" transform="rotate(180,75,64.9519052838329)" />
