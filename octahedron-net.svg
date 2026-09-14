@@ -1,0 +1,18 @@
+<svg width="525" height="389.7114317029974" viewBox="0 0 525 389.7114317029974" xmlns="http://www.w3.org/2000/svg" version="2">
+    <defs>
+        <g id="triangle-tile">
+            <path d="M 12.990381056766578,122.4038105676658 h 124.01923788646684 l -62.00961894323342,-107.40381056766579 z" fill="none" stroke="grey" stroke-width="13.5" />
+        </g>
+        <g id="rotated-triangle-tile">
+            <use href="#triangle-tile" transform="rotate(180,75,64.9519052838329)" />
+        </g>
+    </defs>
+    <use href="#triangle-tile" x="150" y="0" />
+    <use href="#rotated-triangle-tile" x="0" y="129.9038105676658" />
+    <use href="#triangle-tile" x="75" y="129.9038105676658" />
+    <use href="#rotated-triangle-tile" x="150" y="129.9038105676658" />
+    <use href="#triangle-tile" x="225" y="129.9038105676658" />
+    <use href="#rotated-triangle-tile" x="300" y="129.9038105676658" />
+    <use href="#triangle-tile" x="375" y="129.9038105676658" />
+    <use href="#rotated-triangle-tile" x="225" y="259.8076211353316" />
+</svg>
