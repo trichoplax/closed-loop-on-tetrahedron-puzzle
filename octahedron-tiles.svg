@@ -3,8 +3,8 @@
         <path id="arc" d="M 37.5,64.9519052838329 a 75 75 60 0 0 75,0" fill="none" />
         <g id="triangle-tile-with-arc">
             <path d="M 12.990381056766578,122.4038105676658 h 124.01923788646684 l -62.00961894323342,-107.40381056766579 z" fill="none" stroke="grey" stroke-width="15" />
-            <use href="#arc" stroke="#e4a" stroke-width="20" />
-            <use href="#arc" stroke="#a7e" stroke-width="10" />
+            <use href="#arc" stroke="#e84" stroke-width="20" />
+            <use href="#arc" stroke="#d43" stroke-width="10" />
         </g>
     </defs>
     <use href="#triangle-tile-with-arc" x="0" y="0" />

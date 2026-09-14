@@ -107,8 +107,8 @@ fn main() -> std::io::Result<()> {
         <path id="arc" d="M {octahedron_triangle_quarter_width},{octahedron_triangle_half_height} a {octahedron_triangle_half_width} {octahedron_triangle_half_width} 60 0 0 {octahedron_triangle_half_width},0" fill="none" />
         <g id="triangle-tile-with-arc">
             <path d="M {octahedron_inner_triangle_start_x},{octahedron_inner_triangle_start_y} h {octahedron_inner_triangle_width} l -{octahedron_inner_triangle_half_width},-{octahedron_inner_triangle_height} z" fill="none" stroke="grey" stroke-width="{octahedron_triangle_stroke_width}" />
-            <use href="#arc" stroke="#e4a" stroke-width="{octahedron_wide_arc_width}" />
-            <use href="#arc" stroke="#a7e" stroke-width="{octahedron_narrow_arc_width}" />
+            <use href="#arc" stroke="#e84" stroke-width="{octahedron_wide_arc_width}" />
+            <use href="#arc" stroke="#d43" stroke-width="{octahedron_narrow_arc_width}" />
         </g>
     </defs>
     <use href="#triangle-tile-with-arc" x="0" y="0" />
